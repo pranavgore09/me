@@ -74,15 +74,15 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     url = "blogs/"
     weight = 1
 
-  [[menu.main]]
-    name = "My Guitar Videos!"
-    url = "guitar/"
-    weight = 2
+  #[[menu.main]]
+  #  name = "My Guitar Videos!"
+  #  url = "guitar/"
+  #  weight = 2
 
-  [[menu.main]]
-    name = "Board Games"
-    url = "bg/"
-    weight = 3
+  #[[menu.main]]
+  #  name = "Board Games"
+  #  url = "bg/"
+  #  weight = 3
 
   [[menu.main]]
     name = "About"
