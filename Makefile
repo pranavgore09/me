@@ -2,6 +2,9 @@
 dev:
 	hugo server -D
 
+build:
+	hugo -D
+
 new-blog:
 	echo "hugo new blogs/example.md"
 

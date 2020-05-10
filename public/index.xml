@@ -1,14 +1,93 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Pranav Gore</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Pranav Gore</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 10 May 2020 09:59:15 +0530</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Example</title>
+      <link>https://example.com/guitar/example/</link>
+      <pubDate>Sun, 10 May 2020 09:59:15 +0530</pubDate>
+      
+      <guid>https://example.com/guitar/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example</title>
+      <link>https://example.com/bg/example/</link>
+      <pubDate>Sun, 10 May 2020 09:58:57 +0530</pubDate>
+      
+      <guid>https://example.com/bg/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://example.com/rubik/tutorial/</link>
+      <pubDate>Mon, 30 Mar 2020 21:55:52 +0530</pubDate>
+      
+      <guid>https://example.com/rubik/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>And Timed less than 2m</title>
+      <link>https://example.com/rubik/timed/</link>
+      <pubDate>Mon, 30 Mar 2020 21:52:34 +0530</pubDate>
+      
+      <guid>https://example.com/rubik/timed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>https://example.com/rubik/first/</link>
+      <pubDate>Mon, 30 Mar 2020 21:52:34 +0530</pubDate>
+      
+      <guid>https://example.com/rubik/first/</guid>
+      <description>Yay! I solved the Rubik&amp;rsquo;s cube for the first time&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>https://example.com/blogs/first/</link>
+      <pubDate>Tue, 28 Jan 2020 23:53:45 +0530</pubDate>
+      
+      <guid>https://example.com/blogs/first/</guid>
+      <description>List of blogs to be written
+ FFmpeg to record audio. Xvfb ? what it is? Basic usage. Headless mode Pulseaudio and virtual devices Xvfb Pulseaudio with FFmpeg to record audio and screen. Selenium simple sweet basic round of test My Guide/Theory Buying Board Games.  Blog structure
+Intro + Picture (logos)
+first para - explain the page in shortest format
+Actual content.
+End with a note - what we have achieved</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/about/</guid>
+      <description>This is not list page Design this page to show profile pic, self details, allow to download resume add paragraphs that you strongly believe in</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/thinktank/think/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/thinktank/think/</guid>
+      <description>write down whatever you think for this profile builder</description>
+    </item>
     
   </channel>
 </rss>

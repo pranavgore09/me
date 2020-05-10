@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rubiks on Pranav Gore</title>
+    <link>https://example.com/rubik/</link>
+    <description>Recent content in Rubiks on Pranav Gore</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 30 Mar 2020 21:55:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://example.com/rubik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://example.com/rubik/tutorial/</link>
+      <pubDate>Mon, 30 Mar 2020 21:55:52 +0530</pubDate>
+      
+      <guid>https://example.com/rubik/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>And Timed less than 2m</title>
+      <link>https://example.com/rubik/timed/</link>
+      <pubDate>Mon, 30 Mar 2020 21:52:34 +0530</pubDate>
+      
+      <guid>https://example.com/rubik/timed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>https://example.com/rubik/first/</link>
+      <pubDate>Mon, 30 Mar 2020 21:52:34 +0530</pubDate>
+      
+      <guid>https://example.com/rubik/first/</guid>
+      <description>Yay! I solved the Rubik&amp;rsquo;s cube for the first time&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
