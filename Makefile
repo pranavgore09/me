@@ -5,6 +5,9 @@ dev:
 build:
 	hugo -D
 
+deploy:
+	./deploy.sh
+
 new-blog:
 	echo "hugo new blogs/example.md"
 
