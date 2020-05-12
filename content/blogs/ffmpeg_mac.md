@@ -90,8 +90,8 @@ ffmpeg -y -f avfoundation -i "1:0" output.mkv
 ```
 And verify your recording, hopefully it comes out as expected!
 
-
-Conclusion:
+---
+### Conclusion:
 Now, you can go ahead and put it in a [Makefile](https://www.gnu.org/software/make/manual/make.html) and then with single command like `make record` you can start your recording. Very easy to get started with.
 
 
