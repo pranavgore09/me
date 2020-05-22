@@ -1,6 +1,6 @@
 ---
 title: "Prevent accidental git-push in a simple step"
-date: 2020-05-22T14:45:26+05:30
+date: 2018-02-08T14:45:26+05:30
 draft: false
 ---
 
