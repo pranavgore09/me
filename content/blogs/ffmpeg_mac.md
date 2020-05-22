@@ -6,7 +6,9 @@ draft: false
 
 By the end of this blog you will be able to record your screen+audio on macOS.
 
+{{< figure src="/img/for_blogs/ffmpeg_ubuntu.png" title="2 beautiful Open Source softwares" >}}
 
+----
 Get started by installing FFmpeg with [brew](https://formulae.brew.sh/formula/ffmpeg). Run following command
 
 ```

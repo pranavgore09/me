@@ -6,6 +6,10 @@ draft: false
 
 Today, let's talk about AWESOME X virtual frame buffer.
 
+{{< figure src="/img/for_blogs/vr.jpg" title="Virtual memory to render GUI" >}}
+
+------
+
 If you want to emulate the X server and want your UI apps to render over there then the answer is [Xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml).
 Xvfb uses frame buffer to emulate X server.
 
