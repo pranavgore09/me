@@ -1,7 +1,7 @@
 ---
 title: "X virtual framebuffer (Xvfb)"
 date: 2020-04-22T23:53:45+05:30
-draft: true
+draft: false
 ---
 
 Today, let's talk about AWESOME X virtual frame buffer.
