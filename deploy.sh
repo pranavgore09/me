@@ -23,3 +23,5 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
+
+echo "Visit https://pranavgore09.github.io/"
