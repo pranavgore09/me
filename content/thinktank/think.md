@@ -2,9 +2,7 @@ write down whatever you think for this profile builder
 
 List of blogs to be written
 
-1. FFmpeg to record screen+audio, video.
-2. Xvfb ? what it is? Basic usage. Headless mode
-3. Pulseaudio and virtual devices
+1. Pulseaudio and virtual devices
 ##### DONT ADD THIS 4. Xvfb Pulseaudio with FFmpeg to record audio and screen.
 5. Selenium simple sweet basic round of test (Join your next googlemeet with automation)
 
