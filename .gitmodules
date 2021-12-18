@@ -5,3 +5,6 @@
 	path = public
 	url = git@github.com:pranavgore09/pranavgore09.github.io.git
 	branch = master
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
