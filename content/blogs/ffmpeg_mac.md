@@ -60,7 +60,7 @@ Now, lets record with most minimum setup
 ```
 ffmpeg -y -f avfoundation -i "1:0" output.mkv
 ```
-Explaination for each parameter
+Explanation for each parameter
 
 -y : overwrite output file if exists
 
