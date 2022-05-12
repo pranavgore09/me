@@ -1,10 +1,16 @@
 ---
 ShowBreadCrumbs: false
+openLinksNewTab: true
 ---
+
+Python, Django+DRF, Javascript, Redis, PostgreSQL, FFMpeg, Video processing (FFmpeg), HLS, AWS, IaC (Terraform and cloudformation), CI/CD (Github Actions and Jenkins). Hands on experince with all mentioned 😊.
+
+[Resume](/pdf/PranavGoreResume2022.pdf "Pranav Gore Resume")
+
 
 More than just a software developer.
 
-Learn, Understand, Brainstorm, Train, Develop, Maintain, Repeat.
+Learn, Understand, Brainstorm, Train, Develop, Maintain, Run10k, Repeat.
 
 I have used above pattern in my 10 years of software journey and it helped me extraordinarily.
 
@@ -17,3 +23,5 @@ Brainstorming on ideas/implementations, picking up most valuable deal for long t
 
 Those extra lines of code are great if it reduces the cognitive load. Context switches can be expensive but are required to fix the problems of existing users.
 
+
+Make it work.
