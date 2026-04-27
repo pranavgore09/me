@@ -46,11 +46,6 @@ params:
     favicon32x32: "/favicon/favicon-32x32.png"
     apple_touch_icon: "/favicon/apple-touch-icon.png"
 
-  # label:
-  #   text: "Pranav Gore"
-  #   # icon: /img/letter-p.jpg
-  #   iconHeight: 15
-
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
