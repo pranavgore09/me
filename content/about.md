@@ -5,6 +5,8 @@ ShowBreadCrumbs: false
 openLinksNewTab: true
 ---
 
+{{< center >}}{{< imgresize "/img/profile4_small.png" 240 240 "Pranav Gore" >}}{{< /center >}}
+
 Founding or early engineer at two startups, Avoma and Privyr. When you are that early in a team, there are no handoffs. You own the problem from the first line of code to production. That shaped how I work: commit to it, scope it right, and deliver.
 
 Early stage means something barely running, rough architecture, quick decisions made under pressure. The job is to take that, stabilize it, build on it properly, and ship something people can rely on. Not just writing features but owning the full picture.

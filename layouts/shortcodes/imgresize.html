@@ -1,4 +1,5 @@
 {{ $original := .Get 0 }}
 {{ $height := .Get 1 }}
 {{ $width := .Get 2 }}
-<img src="{{ $original }}" width="{{ $width }}" height="{{ $height }}">
+{{ $alt := .Get 3 | default "" }}
+<img src="{{ $original }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}">

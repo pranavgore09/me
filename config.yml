@@ -20,7 +20,7 @@ params:
   description: "Software Engineer with 12+ years building backend systems — Python, Django, PostgreSQL, Redis, AWS, FFmpeg/HLS video pipelines, Terraform, and GitHub Actions CI/CD. Founding/early engineer at Avoma and Privyr."
   keywords: [Software Engineer, Backend Engineer, Python, Django, DRF, PostgreSQL, Redis, AWS, FFmpeg, HLS, Terraform, GitHub Actions, Jenkins, CloudFormation, JavaScript, Portfolio, Resume, Pranav Gore]
   author: "Pranav Gore"
-  images: ["/img/profile2.jpeg"]
+  images: ["/img/profile4_small.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # auto, dark, light
   disableThemeToggle: true
@@ -41,12 +41,10 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    # favicon paths — add once favicon files exist in /static/
-    # favicon: "/favicon.ico"
-    # favicon16x16: "/favicon-16x16.png"
-    # favicon32x32: "/favicon-32x32.png"
-    # apple_touch_icon: "/apple-touch-icon.png"
-    # safari_pinned_tab: "/safari-pinned-tab.svg"
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
 
   # label:
   #   text: "Pranav Gore"
@@ -58,7 +56,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Pranav Gore
     subtitle: "Software Engineer"
-    imageUrl: "/img/profile2.jpeg"
+    imageUrl: "/img/profile4_small.png"
     imageWidth: 130
     imageHeight: 130
     imageTitle: Pranav Gore
@@ -68,7 +66,7 @@ params:
       - name: About
         url: about
       - name: Resume
-        url: /pdf/PranavGoreResume2022.pdf
+        url: /pdf/PranavGoreResume2026.pdf
 
   # home-info mode
   homeInfoParams:

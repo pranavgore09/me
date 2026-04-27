@@ -7,4 +7,4 @@ openLinksNewTab: true
 
 Please write to me at pranavgore09@gmail.com.
 
-[Resume](/pdf/PranavGoreResume2022.pdf "Pranav Gore Resume")
+[Resume](/pdf/PranavGoreResume2026.pdf "Pranav Gore Resume")
