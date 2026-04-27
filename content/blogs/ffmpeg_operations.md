@@ -10,9 +10,8 @@ draft: false
 hidemeta: false
 comments: false
 # description: "Let's learn about simple FFmpeg operations on video files"
-disableHLJS: true # to disable highlightjs
+disableHLJS: true
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: true
 ShowReadingTime: true

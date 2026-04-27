@@ -1,1 +1,10 @@
 public
+
+# IDEs
+.idea/
+
+# AI tools
+.claude/
+.cursor/
+.aider*
+.copilot/
