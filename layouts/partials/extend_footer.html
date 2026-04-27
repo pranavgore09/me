@@ -1,0 +1,40 @@
+<script>
+(function () {
+  var el = document.getElementById('typewriter-text');
+  if (!el) return;
+
+  var phrases = [
+    'Software Engineer',
+    'Backend Developer',
+    '10+ Years of Experience',
+    'Python · Django · AWS',
+    'Building scalable products'
+  ];
+
+  var phraseIdx = 0, charIdx = 0, deleting = false;
+
+  function tick() {
+    var current = phrases[phraseIdx];
+    if (deleting) {
+      el.textContent = current.substring(0, charIdx - 1);
+      charIdx--;
+    } else {
+      el.textContent = current.substring(0, charIdx + 1);
+      charIdx++;
+    }
+
+    var delay = deleting ? 45 : 95;
+    if (!deleting && charIdx === current.length) {
+      delay = 2200;
+      deleting = true;
+    } else if (deleting && charIdx === 0) {
+      deleting = false;
+      phraseIdx = (phraseIdx + 1) % phrases.length;
+      delay = 350;
+    }
+    setTimeout(tick, delay);
+  }
+
+  setTimeout(tick, 600);
+})();
+</script>

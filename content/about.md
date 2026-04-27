@@ -3,25 +3,12 @@ ShowBreadCrumbs: false
 openLinksNewTab: true
 ---
 
-Python, Django+DRF, Javascript, Redis, PostgreSQL, FFMpeg, Video processing (FFmpeg), HLS, AWS, IaC (Terraform and cloudformation), CI/CD (Github Actions and Jenkins). Hands on experince with all mentioned 😊.
+Founding or early engineer at two startups, Avoma and Privyr. When you are that early in a team, there are no handoffs. You own the problem from the first line of code to production. That shaped how I work: commit to it, scope it right, and deliver.
 
-[Resume](/pdf/PranavGoreResume2022.pdf "Pranav Gore Resume")
+Early stage means something barely running, rough architecture, quick decisions made under pressure. The job is to take that, stabilize it, build on it properly, and ship something people can rely on. Not just writing features but owning the full picture.
 
+12+ years in, the pattern is consistent: understand the problem first, then build. Moving fast does not mean being careless. It means knowing what to defer and what to get right the first time. I have seen products break in production. That shapes you. Strong bias toward maintainable code, systems you can actually debug, and commitments that get kept. AI tooling is now part of how I work, using it to move faster without cutting corners on quality.
 
-More than just a software developer.
+I work well with small teams where ownership is clear and the bar is high. Direct communication, no status theatre. If something is blocked I say so early, if something is wrong I would rather fix it than hide it. The goal is always a working product, not just working code.
 
-Learn, Understand, Brainstorm, Train, Develop, Maintain, Run10k, Repeat.
-
-I have used above pattern in my 10 years of software journey and it helped me extraordinarily.
-
-I have hands-on experience of software products going down and up. I have worked in start ups with less than 10 head count and enjoyed building real world and easy to use products. To solve one issue you need to find answers to multiple smaller issues and that is where I learn and grow. It's not just writing the code that builds a product. There are many other integral parts to make the product a success. Following are some of my believes and some are just facts 😃
-
-Engineering research and Market research are equally important. Retaining existing customers is equally important to acquiring new users. Good documentation and writing tests is as important as the code itself (Yes, It takes time and energy, lots of it, as it keeps changing).
-
-
-Brainstorming on ideas/implementations, picking up most valuable deal for long term growth is the key. Maintainable and scalable codebases starts giving back higher returns as software and teams grow. Production hot-fixes are very important only for short period of time, they must be re-visited.
-
-Those extra lines of code are great if it reduces the cognitive load. Context switches can be expensive but are required to fix the problems of existing users.
-
-
-Make it work.
+The code ships or it does not matter.

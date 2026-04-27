@@ -57,14 +57,18 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Pranav Gore
-    subtitle: "A Software Developer"
+    subtitle: "Software Engineer"
     imageUrl: "/img/profile2.jpeg"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    imageWidth: 130
+    imageHeight: 130
+    imageTitle: Pranav Gore
     buttons:
       - name: Blogs
         url: blogs
+      - name: About
+        url: about
+      - name: Resume
+        url: /pdf/PranavGoreResume2022.pdf
 
   # home-info mode
   homeInfoParams:
