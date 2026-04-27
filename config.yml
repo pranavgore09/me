@@ -81,13 +81,9 @@ params:
       url: "https://twitter.com/pranavgore09"
     
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
-  #   bing:
-  #     SiteVerificationTag: "XYZabc"
-  #   yandex:
-  #     SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "Tg_WudYwZi8MQ2dsdV9OwqnF9mIdvEWt1kSMycY3JO4"
 
   cover:
     hidden: true # hide everywhere but not in structured data
