@@ -65,6 +65,8 @@
   justify-content: center;
   margin: 0.9rem 0 0.4rem;
   max-width: 480px;
+  list-style: none;
+  padding: 0;
 }
 .tech-badge {
   background: rgba(6, 182, 212, 0.08);
@@ -210,3 +212,38 @@ body.list .entry-footer {
   }
 }
 </style>
+
+<meta name="author" content="Pranav Gore" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+{{- /* Identity links — used by AI and social crawlers to associate profiles */ -}}
+<link rel="me" href="https://github.com/pranavgore09" />
+<link rel="me" href="https://www.linkedin.com/in/pranavgore/" />
+<link rel="me" href="https://twitter.com/pranavgore09" />
+<link rel="me" href="https://stackoverflow.com/users/1776087/pranav" />
+
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pranav Gore",
+  "url": "{{ site.BaseURL }}",
+  "image": "{{ "/img/profile2.jpeg" | absURL }}",
+  "jobTitle": "Software Engineer",
+  "description": "Backend software engineer with 12+ years building production systems at early-stage startups (Avoma, Privyr). Specialises in Python, Django, PostgreSQL, Redis, AWS, and video infrastructure with FFmpeg and HLS.",
+  "sameAs": [
+    "https://github.com/pranavgore09",
+    "https://www.linkedin.com/in/pranavgore/",
+    "https://stackoverflow.com/users/1776087/pranav",
+    "https://medium.com/@pranavgore09",
+    "https://twitter.com/pranavgore09"
+  ],
+  "knowsAbout": [
+    "Python", "Django", "Django REST Framework", "JavaScript",
+    "PostgreSQL", "Redis", "AWS", "FFmpeg", "HLS", "Terraform",
+    "CloudFormation", "GitHub Actions", "Jenkins", "Docker"
+  ]
+}
+</script>
+{{- end }}

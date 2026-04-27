@@ -2,6 +2,8 @@
 title: "Prevent accidental git-push in a simple step"
 date: 2018-02-08T14:45:26+05:30
 draft: false
+description: "A one-line git configuration trick to prevent accidentally pushing to an upstream repository you don't intend to touch."
+tags: [git, developer-tools, tips]
 ---
 
 If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.

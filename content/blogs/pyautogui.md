@@ -2,6 +2,8 @@
 title: "When & why to use PyAutoGUI"
 date: 2022-05-02T06:26:33+05:30
 draft: false
+description: "When PyAutoGUI is the right tool for desktop GUI automation and testing — practical use cases, limitations, and a getting-started walkthrough."
+tags: [python, automation, testing, desktop, gui]
 ---
 
 {{< figure src="/img/for_blogs/pyautogui.png" >}}

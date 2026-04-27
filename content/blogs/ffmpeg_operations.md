@@ -3,13 +3,14 @@ title: "Video File Operations with FFmpeg"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-author: "Me"
+author: "Pranav Gore"
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-# description: "Let's learn about simple FFmpeg operations on video files"
+description: "Common FFmpeg video processing operations: trimming, merging, format conversion, resolution scaling, and extracting audio from video files."
+tags: [ffmpeg, video, linux, media]
 disableHLJS: true
 disableShare: false
 hideSummary: false

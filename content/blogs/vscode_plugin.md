@@ -3,6 +3,8 @@ title: "Writing custom VSCode plugin"
 date: 2022-05-20T15:24:16+05:30
 draft: false
 openLinksNewTab: true
+description: "A practical walkthrough of building a custom Visual Studio Code extension — from scaffolding to shipping a working developer utility."
+tags: [vscode, javascript, developer-tools, extensions]
 ---
 
 I enjoy writing code snippets that eventually works out as a utility to a developer.

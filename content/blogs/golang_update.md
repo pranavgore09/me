@@ -2,6 +2,8 @@
 title: "Update golang version on Fedora"
 date: 2017-10-16T22:40:33+05:30
 draft: false
+description: "How to safely update your Go installation on Fedora Linux while keeping the old version as a fallback."
+tags: [golang, fedora, linux, installation]
 ---
 
 

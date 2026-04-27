@@ -2,6 +2,8 @@
 title: "Exported but Restricted inside `internal` package."
 date: 2018-02-28T22:50:31+05:30
 draft: false
+description: "Understanding Go's internal package mechanism — how exported symbols can be restricted to specific import paths, and when to use blank and dot imports."
+tags: [golang, go, packages, internals]
 ---
 
 

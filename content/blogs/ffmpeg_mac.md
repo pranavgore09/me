@@ -2,6 +2,8 @@
 title: "Record Screen and Audio using FFmpeg on macOS"
 date: 2020-05-12T09:34:21+05:30
 draft: false
+description: "Step-by-step guide to recording your screen and system audio on macOS using FFmpeg from the command line — no third-party software required."
+tags: [ffmpeg, macos, video, screen-recording]
 ---
 
 By the end of this blog you will be able to record your screen+audio on macOS.

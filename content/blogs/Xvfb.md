@@ -2,6 +2,8 @@
 title: "X virtual framebuffer (Xvfb)"
 date: 2020-04-22T23:53:45+05:30
 draft: false
+description: "What Xvfb (X Virtual Framebuffer) is, how it works, and how to use it to run GUI applications in headless Linux environments for CI/CD pipelines and testing."
+tags: [linux, testing, ci, gui, headless]
 ---
 
 Today, let's talk about AWESOME X virtual frame buffer.
