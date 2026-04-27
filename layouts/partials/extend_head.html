@@ -109,4 +109,104 @@
 .social-icons a:hover svg {
   filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.65));
 }
+
+/* ── Blog list: page header ── */
+body.list .page-header h1 {
+  background: linear-gradient(135deg, #06b6d4 0%, #818cf8 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Blog list: cards ── */
+body.list .post-entry {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 3px solid #06b6d4;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.2rem 1.5rem;
+  transition: all 0.25s ease;
+  margin-bottom: 1rem;
+}
+body.list .post-entry:hover {
+  background: rgba(6, 182, 212, 0.05);
+  border-color: rgba(6, 182, 212, 0.25);
+  border-left-color: #a855f7;
+  transform: translateX(5px);
+  box-shadow: 0 4px 24px rgba(6, 182, 212, 0.08);
+}
+body.list .entry-header h2 {
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+body.list .post-entry:hover .entry-header h2 {
+  color: #06b6d4;
+}
+body.list .entry-content p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--secondary);
+  margin: 0.4rem 0 0;
+}
+body.list .entry-footer {
+  font-size: 0.76rem;
+  opacity: 0.45;
+  margin-top: 0.6rem;
+}
+
+/* ── Mobile overrides ── */
+@media (max-width: 640px) {
+  /* Profile: tighter spacing */
+  .profile {
+    padding: 1.5rem 0;
+  }
+  .profile_inner {
+    gap: 0.4rem;
+  }
+
+  /* Name: slightly smaller floor */
+  .profile_inner h1 {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+
+  /* Typewriter: prevent overflow on narrow screens */
+  #typewriter-line {
+    font-size: 0.95rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* Tech badges: allow full width to wrap naturally */
+  .tech-stack {
+    max-width: 100%;
+    gap: 0.35rem;
+  }
+  .tech-badge {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  /* Buttons: stack on very small screens */
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* Blog cards: tighter padding, no translateX on touch */
+  body.list .post-entry {
+    padding: 1rem 1rem 1rem 0.85rem;
+    border-radius: 8px;
+  }
+  body.list .post-entry:hover {
+    transform: none;
+  }
+  body.list .entry-header h2 {
+    font-size: 1rem;
+  }
+  body.list .entry-content p {
+    font-size: 0.85rem;
+  }
+}
 </style>
