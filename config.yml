@@ -72,7 +72,7 @@ params:
 
   socialIcons:
     - name: github
-      url: "https://github.com/pranavgore09?tab=overview&from=2017-12-01&to=2017-12-31"
+      url: "https://github.com/pranavgore09"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/1776087/pranav"
     - name: linkedin
