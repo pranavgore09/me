@@ -23,11 +23,15 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            <a href="/now/" title="What I'm working on now">
+            <img draggable="false" src="{{ $img.Permalink }}" alt="Pranav Gore, Senior Backend Engineer" title="{{ .imageTitle }}"
                 height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            </a>
         {{- else }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+        <a href="/now/" title="What I'm working on now">
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="Pranav Gore, Senior Backend Engineer" title="{{ .imageTitle }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        </a>
         {{- end }}
         {{- end }}
 
