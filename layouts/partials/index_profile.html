@@ -76,6 +76,10 @@
             <li class="tech-badge">Terraform</li>
             <li class="tech-badge">GitHub Actions</li>
         </ul>
+
+        {{- with $.Content }}
+        <div class="profile-bio">{{ . }}</div>
+        {{- end }}
     </div>
     {{- end}}
 </div>

@@ -1,6 +1,6 @@
 
 dev:
-	hugo server -D --baseURL=http://localhost:1313/
+	hugo server -D --baseURL=http://localhost:1313/ -d /tmp/hugo_dev
 
 build:
 	hugo -D
