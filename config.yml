@@ -20,7 +20,7 @@ params:
   description: "Software Engineer with 12+ years building backend systems. Python, Django, PostgreSQL, Redis, AWS, FFmpeg/HLS video pipelines, Terraform, GitHub Actions CI/CD. Founding engineer at Avoma and Privyr."
   keywords: [Software Engineer, Backend Engineer, Python, Django, DRF, PostgreSQL, Redis, AWS, FFmpeg, HLS, Terraform, GitHub Actions, Jenkins, CloudFormation, JavaScript, Portfolio, Resume, Pranav Gore]
   author: "Pranav Gore"
-  images: ["/img/profile4_small.png"]
+  images: ["/img/og_v1.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # auto, dark, light
   disableThemeToggle: true
