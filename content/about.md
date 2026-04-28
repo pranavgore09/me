@@ -1,5 +1,5 @@
 ---
-title: "Pranav Gore, Senior Backend Engineer"
+title: "About"
 description: "I'm a backend software engineer with 12+ years building production systems at Avoma and Privyr. Python, Django, AWS, PostgreSQL, Redis, FFmpeg"
 ShowBreadCrumbs: false
 openLinksNewTab: true
