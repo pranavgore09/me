@@ -1,5 +1,5 @@
 baseURL: "https://pranavgore09.github.io/"
-title: "Pranav Gore"
+title: "Pranav Gore | Senior Backend Engineer"
 paginate: 5
 theme: PaperMod
 
@@ -50,7 +50,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Pranav Gore
-    subtitle: "Software Engineer"
+    subtitle: "Senior Backend Engineer · Python / Django / AWS · 12+ years"
     imageUrl: "/img/profile4_small.png"
     imageWidth: 130
     imageHeight: 130
