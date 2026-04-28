@@ -17,7 +17,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Pranav Gore
-  description: "Software Engineer with 12+ years building backend systems — Python, Django, PostgreSQL, Redis, AWS, FFmpeg/HLS video pipelines, Terraform, and GitHub Actions CI/CD. Founding/early engineer at Avoma and Privyr."
+  description: "Software Engineer with 12+ years building backend systems. Python, Django, PostgreSQL, Redis, AWS, FFmpeg/HLS video pipelines, Terraform, GitHub Actions CI/CD. Founding engineer at Avoma and Privyr."
   keywords: [Software Engineer, Backend Engineer, Python, Django, DRF, PostgreSQL, Redis, AWS, FFmpeg, HLS, Terraform, GitHub Actions, Jenkins, CloudFormation, JavaScript, Portfolio, Resume, Pranav Gore]
   author: "Pranav Gore"
   images: ["/img/profile4_small.png"]
@@ -50,7 +50,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Pranav Gore
-    subtitle: "Senior Backend Engineer · Python / Django / AWS · 12+ years"
+    subtitle: "Senior Backend Engineer, Python / Django / AWS, 12+ years"
     imageUrl: "/img/profile4_small.png"
     imageWidth: 130
     imageHeight: 130
@@ -107,14 +107,18 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: contact
-      name: contact
-      url: /contact/
-      weight: 20
+    - identifier: now
+      name: now
+      url: /now/
+      weight: 5
     - identifier: about
       name: about
       url: /about/
       weight: 10
+    - identifier: contact
+      name: contact
+      url: /contact/
+      weight: 20
     # - identifier: tags
     #   name: tags
     #   url: /tags/
