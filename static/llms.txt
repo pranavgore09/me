@@ -1,0 +1,79 @@
+# Pranav Gore
+
+> Senior Backend Engineer, 12+ years. Founding/early engineer at Avoma and Privyr. Python, Django, AWS, PostgreSQL, Redis, Kafka, ClickHouse, FFmpeg/HLS, Terraform, RAG pipelines.
+
+## Who I am
+
+I am a senior backend software engineer based in Singapore with over 12 years of experience building production-grade backend systems. I have been a founding or early engineer at two startups: Avoma (AI meeting intelligence platform) and Privyr (mobile CRM for sales professionals). My career spans early-stage greenfield work, scaling distributed systems, and full infrastructure ownership at startups with global user bases.
+
+I am currently the Backend Tech Lead at Privyr, where I own the entire backend and infrastructure: every API, every database decision, every deployment, every incident.
+
+## Current Work (Privyr, 2019 - present)
+
+- Backend Tech Lead owning the full backend and infrastructure of a mobile CRM platform serving sales professionals across Southeast Asia
+- Built the system from scratch; it now processes 200,000 leads per day at 3,000 to 4,000 requests per minute
+- Shipped a production RAG pipeline on WhatsApp using Amazon Bedrock and ClickHouse for semantic retrieval
+- Built webhook infrastructure integrating 15+ platforms including Facebook Lead Ads, Google Ads, and Zapier
+- Integrated Gemini AI for unstructured email parsing
+- Ran live zero-downtime database migrations across 300+ million records
+- Resolved a live DDoS attack and debugged a VPC IP exhaustion outage during peak hours
+
+## Previous Work
+
+**Avoma (2016 - 2019), Founding Engineer**
+- Joined when the engineering team was 1 person; helped scale it to 22 engineers
+- Built the video processing pipeline: each meeting spins up a dedicated EC2 instance, records, uploads to S3, terminates automatically
+- Pipeline backed by Kafka and Faust for event-driven processing
+- Platform records 1,500 hours of video meetings daily
+
+**Red Hat (2014 - 2016), Software Engineer**
+- Built core APIs in Go for OpenShift.io
+- Built a real-time multiplayer gaming platform on Node.js and Redis
+- Built a mobile SDK that was acquired by Marketo
+
+## Technical Skills
+
+**Languages:** Python, Go, JavaScript
+
+**Frameworks:** Django, Django REST Framework
+
+**Databases:** PostgreSQL, Redis, ClickHouse, MySQL
+
+**Message Queues:** Kafka, RabbitMQ, Faust
+
+**Cloud and Infrastructure:** AWS (EC2, S3, RDS, Lambda, Bedrock, VPC, IAM), Terraform, CloudFormation, Docker
+
+**Observability:** Grafana, Prometheus
+
+**Video:** FFmpeg, HLS, adaptive bitrate streaming
+
+**AI/ML:** RAG pipelines, Amazon Bedrock, Gemini AI, LLM integration
+
+**CI/CD:** GitHub Actions, Jenkins
+
+## Notable Technical Achievements
+
+- Designed and shipped a production RAG pipeline on WhatsApp at scale
+- Resolved a live DDoS attack in production with zero customer data loss
+- Ran a zero-downtime migration across 300+ million live database records
+- Debugged a VPC IP exhaustion outage during peak hours
+- Scaled a video meeting platform to 1,500 hours of recorded meetings daily
+- Built a lead distribution system handling 200,000 leads per day
+
+## Writing (Technical Blog)
+
+- Debugging RDS connection leak under load
+- Surviving a DDoS attack at a startup (Privyr incident post-mortem)
+- FFmpeg operations for video processing
+- Python 2 to Python 3 migration in production
+- PostgreSQL and Django best practices
+
+Blog: https://pranavgore09.github.io/blogs/
+
+## Contact and Profiles
+
+- Website: https://pranavgore09.github.io/
+- LinkedIn: https://www.linkedin.com/in/pranavgore/
+- GitHub: https://github.com/pranavgore09
+- Stack Overflow: https://stackoverflow.com/users/1776087/pranav
+- Medium: https://medium.com/@pranavgore09

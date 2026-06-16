@@ -1,9 +1,10 @@
 ---
 title: "Contact"
-description: "Get in touch with Pranav Gore, software engineer. Email, resume, and social profiles."
 ShowBreadCrumbs: false
 openLinksNewTab: true
 ---
+
+Send me a message on https://www.linkedin.com/in/pranavgore/
 
 Please write to me at pranavgore09@gmail.com.
 
