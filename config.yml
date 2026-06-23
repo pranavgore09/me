@@ -1,6 +1,7 @@
-baseURL: "https://pranavgore09.github.io/"
+baseURL: "https://pranavgore.com/"
 title: "Pranav Gore | Senior Backend Engineer"
-paginate: 5
+pagination:
+  pagerSize: 10
 theme: PaperMod
 
 enableRobotsTXT: true
