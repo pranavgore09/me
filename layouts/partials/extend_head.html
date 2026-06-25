@@ -1,11 +1,31 @@
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+{{- /* THEME LAB: uncomment to enable color switcher (also uncomment in extend_footer.html) */ -}}
+{{- /* partial "theme_lab_head.html" . */ -}}
+
 <style>
+/* ── Theme Variables ── */
+:root {
+  --pt-accent-dark: #16A34A;
+  --pt-accent: #22C55E;
+  --pt-accent-light: #4ADE80;
+  --pt-accent-rgb: 34, 197, 94;
+  --pt-accent-light-rgb: 74, 222, 128;
+  --theme: #0B1220;
+  --entry: #132035;
+  --primary: #F8FAFC;
+  --secondary: #CBD5E1;
+  --content: #F8FAFC;
+  --border: #1E3050;
+  --tertiary: #1E3050;
+}
+
 /* ── Profile image: glowing ring ── */
 .profile_inner img {
   border-radius: 50%;
   box-shadow:
-    0 0 0 3px #06b6d4,
-    0 0 25px rgba(6, 182, 212, 0.5),
-    0 0 60px rgba(168, 85, 247, 0.25);
+    0 0 0 3px var(--pt-accent),
+    0 0 25px rgba(var(--pt-accent-rgb), 0.5),
+    0 0 60px rgba(var(--pt-accent-rgb), 0.2);
   animation: avatar-glow 3s ease-in-out infinite;
   transition: transform 0.3s ease;
 }
@@ -14,16 +34,16 @@
 }
 @keyframes avatar-glow {
   0%, 100% {
-    box-shadow: 0 0 0 3px #06b6d4, 0 0 25px rgba(6,182,212,.5), 0 0 60px rgba(168,85,247,.25);
+    box-shadow: 0 0 0 3px var(--pt-accent), 0 0 25px rgba(var(--pt-accent-rgb),.5), 0 0 60px rgba(var(--pt-accent-rgb),.2);
   }
   50% {
-    box-shadow: 0 0 0 3px #a855f7, 0 0 35px rgba(168,85,247,.6), 0 0 70px rgba(6,182,212,.3);
+    box-shadow: 0 0 0 3px var(--pt-accent-light), 0 0 35px rgba(var(--pt-accent-light-rgb),.6), 0 0 70px rgba(var(--pt-accent-rgb),.3);
   }
 }
 
 /* ── Gradient name ── */
 .profile_inner h1 {
-  background: linear-gradient(135deg, #06b6d4 0%, #818cf8 50%, #a855f7 100%);
+  background: linear-gradient(135deg, var(--pt-accent-dark) 0%, var(--pt-accent) 50%, var(--pt-accent-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -43,12 +63,12 @@
   margin-bottom: 0.5rem;
 }
 #typewriter-text {
-  color: #06b6d4;
+  color: var(--pt-accent);
   font-weight: 500;
 }
 #typewriter-cursor {
   display: inline-block;
-  color: #a855f7;
+  color: var(--pt-accent-light);
   font-weight: 300;
   animation: cursor-blink 0.7s step-end infinite;
   margin-left: 1px;
@@ -69,9 +89,9 @@
   padding: 0;
 }
 .tech-badge {
-  background: rgba(6, 182, 212, 0.08);
-  border: 1px solid rgba(6, 182, 212, 0.28);
-  color: #67e8f9;
+  background: rgba(var(--pt-accent-rgb), 0.08);
+  border: 1px solid rgba(var(--pt-accent-rgb), 0.28);
+  color: var(--pt-accent-light);
   border-radius: 9999px;
   padding: 0.22rem 0.72rem;
   font-size: 0.77rem;
@@ -86,23 +106,23 @@
   cursor: pointer;
 }
 .tech-badge:hover {
-  background: rgba(6, 182, 212, 0.18);
-  border-color: rgba(6, 182, 212, 0.6);
+  background: rgba(var(--pt-accent-rgb), 0.18);
+  border-color: rgba(var(--pt-accent-rgb), 0.6);
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.2);
+  box-shadow: 0 4px 14px rgba(var(--pt-accent-rgb), 0.2);
 }
 
 /* ── Buttons ── */
 .button {
-  background: rgba(6, 182, 212, 0.1) !important;
-  border: 1px solid rgba(6, 182, 212, 0.35) !important;
+  background: rgba(var(--pt-accent-rgb), 0.1) !important;
+  border: 1px solid rgba(var(--pt-accent-rgb), 0.35) !important;
   border-radius: 8px;
   transition: all 0.25s ease !important;
 }
 .button:hover {
-  background: rgba(6, 182, 212, 0.22) !important;
-  border-color: rgba(6, 182, 212, 0.7) !important;
-  box-shadow: 0 0 18px rgba(6, 182, 212, 0.3) !important;
+  background: rgba(var(--pt-accent-rgb), 0.22) !important;
+  border-color: rgba(var(--pt-accent-rgb), 0.7) !important;
+  box-shadow: 0 0 18px rgba(var(--pt-accent-rgb), 0.3) !important;
   transform: translateY(-2px);
 }
 
@@ -114,12 +134,12 @@
   transform: scale(1.18);
 }
 .social-icons a:hover svg {
-  filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.65));
+  filter: drop-shadow(0 0 5px rgba(var(--pt-accent-rgb), 0.65));
 }
 
 /* ── Blog list: page header ── */
 body.list .page-header h1 {
-  background: linear-gradient(135deg, #06b6d4 0%, #818cf8 50%, #a855f7 100%);
+  background: linear-gradient(135deg, var(--pt-accent-dark) 0%, var(--pt-accent) 50%, var(--pt-accent-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,7 +148,7 @@ body.list .page-header h1 {
 /* ── Blog list: cards ── */
 body.list .post-entry {
   border: 1px solid rgba(255, 255, 255, 0.06);
-  border-left: 3px solid #06b6d4;
+  border-left: 3px solid var(--pt-accent);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.02);
   padding: 1.2rem 1.5rem;
@@ -136,18 +156,18 @@ body.list .post-entry {
   margin-bottom: 1rem;
 }
 body.list .post-entry:hover {
-  background: rgba(6, 182, 212, 0.05);
-  border-color: rgba(6, 182, 212, 0.25);
-  border-left-color: #a855f7;
+  background: rgba(var(--pt-accent-rgb), 0.05);
+  border-color: rgba(var(--pt-accent-rgb), 0.25);
+  border-left-color: var(--pt-accent-light);
   transform: translateX(5px);
-  box-shadow: 0 4px 24px rgba(6, 182, 212, 0.08);
+  box-shadow: 0 4px 24px rgba(var(--pt-accent-rgb), 0.08);
 }
 body.list .entry-header h2 {
   font-size: 1.1rem;
   transition: color 0.2s ease;
 }
 body.list .post-entry:hover .entry-header h2 {
-  color: #06b6d4;
+  color: var(--pt-accent);
 }
 body.list .entry-content p {
   font-size: 0.9rem;
@@ -179,7 +199,6 @@ body.list .entry-footer {
 
 /* ── Mobile overrides ── */
 @media (max-width: 640px) {
-  /* Nav logo: truncate instead of wrapping to next line */
   .logo a {
     white-space: nowrap;
     overflow: hidden;
@@ -188,29 +207,21 @@ body.list .entry-footer {
     font-size: 0.8rem;
     display: inline-block;
   }
-
-  /* Profile: tighter spacing */
   .profile {
     padding: 1.5rem 0;
   }
   .profile_inner {
     gap: 0.4rem;
   }
-
-  /* Name: slightly smaller floor */
   .profile_inner h1 {
     font-size: clamp(1.6rem, 8vw, 2.2rem);
   }
-
-  /* Typewriter: prevent overflow on narrow screens */
   #typewriter-line {
     font-size: 0.95rem;
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
   }
-
-  /* Tech badges: allow full width to wrap naturally */
   .tech-stack {
     max-width: 100%;
     gap: 0.35rem;
@@ -219,15 +230,11 @@ body.list .entry-footer {
     font-size: 0.72rem;
     padding: 0.2rem 0.6rem;
   }
-
-  /* Buttons: stack on very small screens */
   .buttons {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
   }
-
-  /* Blog cards: tighter padding, no translateX on touch */
   body.list .post-entry {
     padding: 1rem 1rem 1rem 0.85rem;
     border-radius: 8px;
@@ -247,7 +254,7 @@ body.list .entry-footer {
 <meta name="author" content="Pranav Gore" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-{{- /* Identity links — used by AI and social crawlers to associate profiles */ -}}
+{{- /* Identity links -- used by AI and social crawlers to associate profiles */ -}}
 <link rel="me" href="https://github.com/pranavgore09" />
 <link rel="me" href="https://www.linkedin.com/in/pranavgore/" />
 <link rel="me" href="https://twitter.com/pranavgore09" />

@@ -1,0 +1,194 @@
+{{- /*
+  THEME LAB — head portion
+  Included from extend_head.html (commented out in production).
+  To add a new theme:
+    1. Add an html[data-ptheme="X"] block below with the color values
+    2. Add a .theme-btn[data-t="X"] rule with the accent color
+    3. Add a button in theme_lab_foot.html
+*/ -}}
+
+<script>
+(function(){
+  var t = localStorage.getItem('ptheme') || '1';
+  document.documentElement.setAttribute('data-ptheme', t);
+})();
+</script>
+
+<style>
+/* ── Theme 1: Navy + Emerald (production) ── */
+html[data-ptheme="1"] {
+  --pt-accent-dark: #0D9488;
+  --pt-accent: #10B981;
+  --pt-accent-light: #34D399;
+  --pt-accent-rgb: 16, 185, 129;
+  --pt-accent-light-rgb: 52, 211, 153;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #F8FAFC; --secondary: #CBD5E1; --content: #F8FAFC;
+}
+/* ── Theme 1A: Navy + Bright Green ── */
+html[data-ptheme="1a"] {
+  --pt-accent-dark: #16A34A;
+  --pt-accent: #22C55E;
+  --pt-accent-light: #4ADE80;
+  --pt-accent-rgb: 34, 197, 94;
+  --pt-accent-light-rgb: 74, 222, 128;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #F8FAFC; --secondary: #CBD5E1; --content: #F8FAFC;
+}
+/* ── Theme 1B: Navy + Teal ── */
+html[data-ptheme="1b"] {
+  --pt-accent-dark: #0F766E;
+  --pt-accent: #14B8A6;
+  --pt-accent-light: #2DD4BF;
+  --pt-accent-rgb: 20, 184, 166;
+  --pt-accent-light-rgb: 45, 212, 191;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #F8FAFC; --secondary: #CBD5E1; --content: #F8FAFC;
+}
+/* ── Theme 1C: Navy + Blue ── */
+html[data-ptheme="1c"] {
+  --pt-accent-dark: #2563EB;
+  --pt-accent: #3B82F6;
+  --pt-accent-light: #93C5FD;
+  --pt-accent-rgb: 59, 130, 246;
+  --pt-accent-light-rgb: 147, 197, 253;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #F8FAFC; --secondary: #CBD5E1; --content: #F8FAFC;
+}
+/* ── Theme 1D: Navy + Sky ── */
+html[data-ptheme="1d"] {
+  --pt-accent-dark: #0284C7;
+  --pt-accent: #38BDF8;
+  --pt-accent-light: #7DD3FC;
+  --pt-accent-rgb: 56, 189, 248;
+  --pt-accent-light-rgb: 125, 211, 252;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #F8FAFC; --secondary: #CBD5E1; --content: #F8FAFC;
+}
+/* ── Theme 1E: Navy + Red ── */
+html[data-ptheme="1e"] {
+  --pt-accent-dark: #B91C1C;
+  --pt-accent: #DC2626;
+  --pt-accent-light: #F87171;
+  --pt-accent-rgb: 220, 38, 38;
+  --pt-accent-light-rgb: 248, 113, 113;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #F8FAFC; --secondary: #CBD5E1; --content: #F8FAFC;
+}
+/* ── Theme 1F: Navy + Gray ── */
+html[data-ptheme="1f"] {
+  --pt-accent-dark: #737373;
+  --pt-accent: #A3A3A3;
+  --pt-accent-light: #D4D4D4;
+  --pt-accent-rgb: 163, 163, 163;
+  --pt-accent-light-rgb: 212, 212, 212;
+  --theme: #0B1220; --entry: #132035; --border: #1E3050; --tertiary: #1E3050;
+  --primary: #FFFFFF; --secondary: #D1D5DB; --content: #FFFFFF;
+}
+/* ── Theme 2: Dark Navy + Violet ── */
+html[data-ptheme="2"] {
+  --pt-accent-dark: #6366F1;
+  --pt-accent: #818CF8;
+  --pt-accent-light: #A5B4FC;
+  --pt-accent-rgb: 129, 140, 248;
+  --pt-accent-light-rgb: 165, 180, 252;
+  --theme: #0A0F1C; --entry: #0F1828; --border: #1A2640; --tertiary: #1A2640;
+  --primary: #E5E7EB; --secondary: #94A3B8; --content: #E5E7EB;
+}
+/* ── Theme 3: Gray + Amber ── */
+html[data-ptheme="3"] {
+  --pt-accent-dark: #D97706;
+  --pt-accent: #F59E0B;
+  --pt-accent-light: #FCD34D;
+  --pt-accent-rgb: 245, 158, 11;
+  --pt-accent-light-rgb: 252, 211, 77;
+  --theme: #111827; --entry: #1F2937; --border: #2D3748; --tertiary: #2D3748;
+  --primary: #F9FAFB; --secondary: #D1D5DB; --content: #F9FAFB;
+}
+/* ── Theme 4: Deep Navy + Bright Green ── */
+html[data-ptheme="4"] {
+  --pt-accent-dark: #16A34A;
+  --pt-accent: #22C55E;
+  --pt-accent-light: #4ADE80;
+  --pt-accent-rgb: 34, 197, 94;
+  --pt-accent-light-rgb: 74, 222, 128;
+  --theme: #071018; --entry: #0C1928; --border: #152540; --tertiary: #152540;
+  --primary: #F8FAFC; --secondary: #C7D2FE; --content: #F8FAFC;
+}
+/* ── Theme 5: Pure Black + Amber ── */
+html[data-ptheme="5"] {
+  --pt-accent-dark: #D97706;
+  --pt-accent: #F59E0B;
+  --pt-accent-light: #FCD34D;
+  --pt-accent-rgb: 245, 158, 11;
+  --pt-accent-light-rgb: 252, 211, 77;
+  --theme: #111111; --entry: #1A1A1A; --border: #2A2A2A; --tertiary: #2A2A2A;
+  --primary: #FAFAFA; --secondary: #D4D4D8; --content: #FAFAFA;
+}
+/* ── Theme 6: Navy + Cyan ── */
+html[data-ptheme="6"] {
+  --pt-accent-dark: #0891B2;
+  --pt-accent: #06B6D4;
+  --pt-accent-light: #67E8F9;
+  --pt-accent-rgb: 6, 182, 212;
+  --pt-accent-light-rgb: 103, 232, 249;
+  --theme: #0B1020; --entry: #111B35; --border: #1A2A50; --tertiary: #1A2A50;
+  --primary: #F1F5F9; --secondary: #CBD5E1; --content: #F1F5F9;
+}
+/* ── Theme 7: Deep Blue + Teal ── */
+html[data-ptheme="7"] {
+  --pt-accent-dark: #0F766E;
+  --pt-accent: #14B8A6;
+  --pt-accent-light: #2DD4BF;
+  --pt-accent-rgb: 20, 184, 166;
+  --pt-accent-light-rgb: 45, 212, 191;
+  --theme: #081018; --entry: #0D1A28; --border: #152840; --tertiary: #152840;
+  --primary: #F8FAFC; --secondary: #D6E4F0; --content: #F8FAFC;
+}
+
+/* ── Switcher UI ── */
+#theme-switcher {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+.theme-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.5;
+}
+.theme-btn:hover,
+.theme-btn.active {
+  opacity: 1;
+  transform: scale(1.2);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.theme-btn[data-t="1"]  { background: #10B981; }
+.theme-btn[data-t="1a"] { background: #22C55E; }
+.theme-btn[data-t="1b"] { background: #14B8A6; }
+.theme-btn[data-t="1c"] { background: #3B82F6; color: #fff; }
+.theme-btn[data-t="1d"] { background: #38BDF8; }
+.theme-btn[data-t="1e"] { background: #DC2626; color: #fff; }
+.theme-btn[data-t="1f"] { background: #A3A3A3; }
+.theme-btn[data-t="2"]  { background: #818CF8; color: #fff; }
+.theme-btn[data-t="3"]  { background: #F59E0B; }
+.theme-btn[data-t="4"]  { background: #22C55E; }
+.theme-btn[data-t="5"]  { background: #F59E0B; }
+.theme-btn[data-t="6"]  { background: #06B6D4; }
+.theme-btn[data-t="7"]  { background: #14B8A6; }
+</style>

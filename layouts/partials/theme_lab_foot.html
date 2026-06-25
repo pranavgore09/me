@@ -1,0 +1,37 @@
+{{- /*
+  THEME LAB — body/footer portion
+  Included from extend_footer.html (commented out in production).
+  To add a new theme: add a button here matching the data-ptheme value in theme_lab_head.html.
+*/ -}}
+
+<div id="theme-switcher">
+  <button class="theme-btn" data-t="1"  title="Theme 1 - Emerald">1</button>
+  <button class="theme-btn" data-t="1a" title="Theme 1A - Bright Green">1A</button>
+  <button class="theme-btn" data-t="1b" title="Theme 1B - Teal">1B</button>
+  <button class="theme-btn" data-t="1c" title="Theme 1C - Blue">1C</button>
+  <button class="theme-btn" data-t="1d" title="Theme 1D - Sky">1D</button>
+  <button class="theme-btn" data-t="1e" title="Theme 1E - Red">1E</button>
+  <button class="theme-btn" data-t="1f" title="Theme 1F - Gray">1F</button>
+  <button class="theme-btn" data-t="2"  title="Theme 2 - Violet">2</button>
+  <button class="theme-btn" data-t="3"  title="Theme 3 - Amber">3</button>
+  <button class="theme-btn" data-t="4"  title="Theme 4 - Deep Navy Green">4</button>
+  <button class="theme-btn" data-t="5"  title="Theme 5 - Black Amber">5</button>
+  <button class="theme-btn" data-t="6"  title="Theme 6 - Cyan">6</button>
+  <button class="theme-btn" data-t="7"  title="Theme 7 - Deep Teal">7</button>
+</div>
+<script>
+(function(){
+  var btns = document.querySelectorAll('.theme-btn');
+  var current = document.documentElement.getAttribute('data-ptheme') || '1';
+  btns.forEach(function(btn){
+    btn.classList.toggle('active', btn.getAttribute('data-t') === current);
+    btn.addEventListener('click', function(){
+      var t = this.getAttribute('data-t');
+      document.documentElement.setAttribute('data-ptheme', t);
+      localStorage.setItem('ptheme', t);
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+    });
+  });
+})();
+</script>
