@@ -24,12 +24,12 @@
                 {{- end }}
             {{- end }}
             <a href="/now/" title="What I'm working on now">
-            <img draggable="false" src="{{ $img.Permalink }}" alt="Pranav Gore, Senior Backend Engineer" title="{{ .imageTitle }}"
+            <img draggable="false" src="{{ $img.Permalink }}" alt="Pranav Gore, Staff Backend Engineer" title="{{ .imageTitle }}"
                 height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
             </a>
         {{- else }}
         <a href="/now/" title="What I'm working on now">
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="Pranav Gore, Senior Backend Engineer" title="{{ .imageTitle }}"
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="Pranav Gore, Staff Backend Engineer" title="{{ .imageTitle }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         </a>
         {{- end }}
@@ -64,15 +64,15 @@
         {{- end }}
 
         <ul class="tech-stack" aria-label="Technical skills" role="list">
-            <li class="tech-badge">Python</li>
-            <li class="tech-badge">Django / DRF</li>
-            <li class="tech-badge">JavaScript</li>
-            <li class="tech-badge">PostgreSQL</li>
+            <li class="tech-badge"><a href="/tags/python/">Python</a></li>
+            <li class="tech-badge"><a href="/tags/django/">Django / DRF</a></li>
+            <li class="tech-badge"><a href="/tags/javascript/">JavaScript</a></li>
+            <li class="tech-badge"><a href="/tags/postgresql/">PostgreSQL</a></li>
             <li class="tech-badge">Redis</li>
             <li class="tech-badge">Elasticsearch</li>
             <li class="tech-badge">Celery</li>
-            <li class="tech-badge">AWS</li>
-            <li class="tech-badge">FFmpeg / HLS</li>
+            <li class="tech-badge"><a href="/tags/aws/">AWS</a></li>
+            <li class="tech-badge"><a href="/tags/ffmpeg/">FFmpeg / HLS</a></li>
             <li class="tech-badge">Terraform</li>
             <li class="tech-badge">GitHub Actions</li>
         </ul>

@@ -5,6 +5,8 @@ keywords: [Backend Tech Lead, Python, Django, AWS, RAG pipeline, PostgreSQL, Kaf
 ShowBreadCrumbs: false
 ---
 
+*Building reliable, scalable systems for products that need to perform under real-world load.*
+
 ## What I'm working on
 
 I'm the Backend Tech Lead at [Privyr](https://www.privyr.com/), a mobile CRM for sales professionals across Southeast Asia. I own the entire backend and infrastructure. Not a slice of it. All of it. Every API, every database decision, every deployment, every incident.
