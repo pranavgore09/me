@@ -16,4 +16,4 @@
 ## Deploy
 The site is hosted on Cloudflare Pages at https://pranavgore.com. Pushing to the `master` branch triggers a Cloudflare build and deploy automatically, no manual deploy step needed.
 
-Note: `public/` is a submodule pointing to the old `pranavgore09.github.io` GitHub Pages repo. That site is no longer maintained and now just redirects to pranavgore.com.
+Note: the old `pranavgore09.github.io` GitHub Pages repo is no longer maintained here and now just redirects to pranavgore.com.
