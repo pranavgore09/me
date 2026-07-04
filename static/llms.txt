@@ -62,17 +62,24 @@ I am currently the Backend Tech Lead at Privyr, where I own the entire backend a
 
 ## Writing (Technical Blog)
 
-- Debugging RDS connection leak under load
-- Surviving a DDoS attack at a startup (Privyr incident post-mortem)
-- FFmpeg operations for video processing
-- Python 2 to Python 3 migration in production
-- PostgreSQL and Django best practices
+- [Diagnosing PostgreSQL Connection Leaks on RDS](https://pranavgore.com/blogs/rds-connection-leak/) - How a Gunicorn and PostgreSQL statement_timeout mismatch caused orphaned RDS connections and 502 errors under load, diagnosed using pg_stat_activity
+- [Under Fire: What a Real DDoS Attack Looks Like and How We Fought Back](https://pranavgore.com/blogs/ddos-at-privyr/) - A real-time account of surviving a 30-hour DDoS attack at Privyr and the product change shipped right after
+- [RDS PostgreSQL 13 to 15 Upgrade with GCP DataStream](https://pranavgore.com/blogs/rds-postgres-13-to-15-upgrade/) - Checklist and gotchas for upgrading RDS PostgreSQL 13 to 15 with logical replication and GCP DataStream in the picture
+- [When & why to use PyAutoGUI](https://pranavgore.com/blogs/pyautogui/) - Practical use cases, limitations, and a getting-started walkthrough for desktop GUI automation and testing
+- [Writing custom VSCode plugin](https://pranavgore.com/blogs/vscode_plugin/) - Building a custom Visual Studio Code extension from scaffolding to shipping a working developer utility
+- [X virtual framebuffer (Xvfb)](https://pranavgore.com/blogs/Xvfb/) - What Xvfb is and how to use it to run GUI applications in headless Linux environments for CI/CD and testing
+- [Video File Operations with FFmpeg](https://pranavgore.com/blogs/ffmpeg_operations/) - Common FFmpeg operations: trimming, merging, format conversion, resolution scaling, and extracting audio
+- [Prevent accidental git-push in a simple step](https://pranavgore.com/blogs/gitpush/) - A one-line git configuration trick to prevent accidentally pushing to the wrong upstream repository
+- [Python code translator 2 to 3](https://pranavgore.com/blogs/2to3/) - Using Python's built-in 2to3 tool to automatically translate a Python 2 codebase to Python 3 syntax
+- [Record Screen and Audio using FFmpeg on macOS](https://pranavgore.com/blogs/ffmpeg_mac/) - Recording screen and system audio on macOS using FFmpeg from the command line, no third-party software
+- [Exported but Restricted inside `internal` package](https://pranavgore.com/blogs/golang_imported/) - How Go's internal package mechanism restricts exported symbols to specific import paths
+- [Update golang version on Fedora](https://pranavgore.com/blogs/golang_update/) - Safely updating a Go installation on Fedora Linux while keeping the old version as a fallback
 
-Blog: https://pranavgore09.github.io/blogs/
+Blog: https://pranavgore.com/blogs/
 
 ## Contact and Profiles
 
-- Website: https://pranavgore09.github.io/
+- Website: https://pranavgore.com/
 - LinkedIn: https://www.linkedin.com/in/pranavgore/
 - GitHub: https://github.com/pranavgore09
 - Stack Overflow: https://stackoverflow.com/users/1776087/pranav
