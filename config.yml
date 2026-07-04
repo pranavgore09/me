@@ -114,6 +114,10 @@ menu:
       name: now
       url: /now/
       weight: 5
+    - identifier: blogs
+      name: blog
+      url: /blogs/
+      weight: 8
     - identifier: about
       name: about
       url: /about/
