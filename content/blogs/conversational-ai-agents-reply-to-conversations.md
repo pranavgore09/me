@@ -62,7 +62,7 @@ def bump_next_run_for_attached_agents(conversation):
         )
 ```
 
-The mechanics fall out of the engine for free. `next_run_at` is already the scheduler, so debouncing is just an UPDATE: message one schedules the agent 30 seconds out, message two arrives 8 seconds later and moves it another 30 seconds out, message three moves it again. The agent wakes once, 30 seconds after the lead *stops typing*, and sees the whole burst as one unit of conversation. Classic trailing-edge debounce, implemented in the column we already had.
+The mechanics come straight from the engine. `next_run_at` is already the scheduler, so debouncing is just an UPDATE: message one schedules the agent 30 seconds out, message two arrives 8 seconds later and moves it another 30 seconds out, message three moves it again. The agent wakes once, 30 seconds after the lead *stops typing*, and sees the whole burst as one unit of conversation. Classic trailing-edge debounce, implemented in the column we already had.
 
 Thirty seconds of silence is a long time to leave a hot lead hanging, so attachment also fires a static introduction message, no LLM, sent instantly from config:
 
@@ -122,7 +122,7 @@ def run_scheduled(self, run_obj, action):
 
 Three outcomes, checked in order: new inbound since `last_processed_at`, so process and reply; no new inbound but a nudge is due, so nudge; otherwise reschedule and look again in five minutes.
 
-The load-bearing comparison is `conversation.last_inbound_at > state.last_processed_at`. The agent never consumes messages or tracks message IDs; it tracks a high-water mark. When there is something new, it refetches the recent conversation window and hands the *whole transcript* to the LLM, then advances the mark. Ten new messages or one, same code path, one reply. The burst problem can't come back, because there is no code that handles "a message."
+The key comparison is `conversation.last_inbound_at > state.last_processed_at`. The agent never consumes messages or tracks message IDs; it tracks a high-water mark. When there is something new, it refetches the recent conversation window and hands the *whole transcript* to the LLM, then advances the mark. Ten new messages or one, same code path, one reply. The burst problem can't come back, because there is no code that handles "a message."
 
 The shape also plays well with the engine's re-execution contract, though not perfectly: a re-run after a crash re-reads the same state and reaches the same decision, but if the crash landed between the WhatsApp send and the state write, the reply goes out twice. At-least-once, exactly as the last post warned; the poll shape shrinks the window, it doesn't close it.
 
@@ -224,4 +224,4 @@ That table was the development loop. Type "budget wise maybe around 180k", watch
 
 There is no assertion framework and no scoring here, and that is the point. Before you have any eval infrastructure, "watch the state table while you play the adversarial lead" catches most of the loop and prompt bugs you would otherwise meet in production, for the cost of a subclass. We built real evals later; the simulator is still what we reach for first when a prompt changes.
 
-The loop, then: debounce the burst, poll the conversation, re-check before sleeping, nudge into silence with a deadline, and treat every exit as a designed outcome with a name. The LLM only ever gets called from inside that structure, and the next post is about keeping *it* honest: structured extraction, confidence thresholds, cost metering, and what leads type when they figure out they are talking to a model.
+The loop, then: debounce the burst, poll the conversation, re-check before sleeping, nudge into silence with a deadline, and treat every exit as a designed outcome with a name. The LLM only ever gets called from inside that structure.

@@ -62,6 +62,7 @@ I am currently the Backend Tech Lead at Privyr, where I own the entire backend a
 
 ## Writing (Technical Blog)
 
+- [Putting an LLM in Production: Structure, Cost, and Prompt-Injection Defenses](https://pranavgore.com/blogs/llm-in-production-structure-cost-defenses/) - Wrapping an untrusted LLM inside code that refuses to trust it: one job per call, completion computed from confidence scores the model can't fake, a reliability sandwich, per-conversation cost tracking, and layered prompt-injection defenses
 - [Conversational AI Agents: Reply to Conversations, Not Messages](https://pranavgore.com/blogs/conversational-ai-agents-reply-to-conversations/) - Why a WhatsApp lead-qualification agent attaches to a conversation and polls its state instead of replying per message: burst debouncing, the poll loop, silence handling, and treating every exit condition as a designed product outcome
 - [We Didn't Need Temporal: Durable Agent Runs on Postgres and Celery](https://pranavgore.com/blogs/durable-agent-runs-postgres-celery/) - How we built durable, crash-safe, long-running conversational agents on a single Postgres table and Celery, and why durable-execution requirements are separable from the orchestration features workflow engines bundle with them
 - [Diagnosing PostgreSQL Connection Leaks on RDS](https://pranavgore.com/blogs/rds-connection-leak/) - How a Gunicorn and PostgreSQL statement_timeout mismatch caused orphaned RDS connections and 502 errors under load, diagnosed using pg_stat_activity

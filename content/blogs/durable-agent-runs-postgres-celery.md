@@ -97,7 +97,7 @@ Walk through the failure modes:
 
 Two supporting details. The Celery `time_limit` is deliberately far below the lease duration, so a hung task is killed long before the row comes due again, and the lease can't double-fire. And because a crashed run re-executes, agent implementations must keep their side effects idempotent; that is a contract we impose on agent authors, documented on the base class, not something the framework can do for them.
 
-We got durable execution, the headline feature of the heavyweight tools, from one UPDATE statement issued at the right moment.
+One UPDATE, issued at the right moment, gave us the headline feature of the heavyweight tools: durable execution.
 
 ## Two workers, one row
 
@@ -184,7 +184,7 @@ def record_run_failure(run):
 
 And `apply_result` resets the counter to zero whenever a run succeeds. It is a *consecutive* counter, so one transient LLM-provider outage doesn't slowly poison a long-lived agent that otherwise works. An agent that fails three wake-ups in a row is genuinely broken for that conversation, and it removes itself instead of burning an hourly retry forever. When we count the moving parts an unattended agent fleet actually needs, this counter ranks above almost everything the fancy tools advertise.
 
-Which leaves the question every stakeholder eventually asks: how do these runs end? We got the answer for free by refusing to have a generic "DONE" status:
+Which leaves the question every stakeholder eventually asks: how do these runs end? We answered it by refusing to have a generic "DONE" status:
 
 ```python
 class ScheduledRunStatus(enum.Enum):
